@@ -8,6 +8,9 @@ if [ "$release" = "f39" ]; then
 elif [ "$release" = "f40" ]; then
     build_target="f40"
     branch="rawhide-rv64"
+elif [ "$release" = "rawhide" ]; then
+    build_target="rawhide"
+    branch="rawhide-rv64"
 else
     echo "Invalid release specified."
     exit 1
